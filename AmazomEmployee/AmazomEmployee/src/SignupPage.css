@@ -1,0 +1,112 @@
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9; 
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.signup-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000;
+  margin: 0;
+  padding-right:20px;
+  align-self: center; 
+  text-align: center;
+}
+
+.signup-form-container {
+  flex: 1;
+  border-left: 5px solid #cd9042; 
+  padding-left: 20px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.form-group input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.signup-button {
+  background-color: #cd9042; 
+  color: #000;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.signup-button:hover {
+  background-color: #b87c38; 
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 15px;
+    max-width: 90%;
+  }
+  .signup-title {
+    font-size: 1.5rem;
+    padding-right: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cd9042; /* Replace left border with bottom */
+  }
+  .signup-form-container {
+    border-left: none; /* Remove left border */
+    padding-left: 0;
+    border-top: 5px solid #cd9042; /* Use top border instead */
+  }
+  .signup-button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
