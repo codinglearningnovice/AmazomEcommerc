@@ -1,0 +1,92 @@
+20250201	03:50:20	add41f93-e0c0-4c43-9a30-22a8a270e7d0	Error:not allowed by cors
+20250201	03:52:47	ab59a171-4c9d-4bd8-a32e-fcf9cb48f0ce	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\views\index.html'
+20250201	03:52:48	ac7df6bd-6e8b-4302-8d55-61e3f42ed290	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\views\index.html'
+20250201	03:52:54	4665e4de-49b5-456c-9de0-1f2d035d4cab	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\views\index.html'
+20250201	03:52:57	b0bf7e87-67b5-4381-a1f8-e17b85199162	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\views\index.html'
+20250201	05:38:00	fd8ecd7c-2d79-463d-9a67-5f13b37d9358	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250201	05:38:43	8cf4acd8-bc6e-4b79-980a-e68ced02c14f	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250201	05:38:44	8621f2fc-8056-4412-8e88-60130e821fa0	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250201	05:38:44	d8696fad-8cea-4ac7-a648-0ca05cb8ef99	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250201	05:38:45	5e48b2fc-0e50-4d7a-aa18-da3e0cd7e6b6	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250204	01:59:53	ae8eb49a-6f00-4acf-8a0c-2399d1b56ab8	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	01:59:54	3e71549c-67ac-43fa-9651-1c8a278fccf6	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:00:18	445abe8f-aec3-494a-bdc3-28c8df3afe93	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:01:16	56407fae-b061-4a16-85e2-9484c4dbb301	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:01:29	9884fce6-cb30-4675-9327-be25df04588f	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:01:30	2d1acce5-19a6-4120-b32f-77e6c62100a4	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:01:31	bce4a44d-73ec-4861-a905-2fac7521fe5c	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:01:42	3d46d688-4107-468e-a2d2-9270f55bfa59	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:07:26	bc498075-1cfa-4bf8-98b7-3900cb3b3dc4	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:11:28	5597e112-852c-4b84-83f6-b8f46f547bef	TypeError:data.staff.find is not a function
+20250204	02:11:37	d102b6a3-b754-42e2-9582-6f48d8bf64e9	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:11:56	822c2e9f-2e1f-4864-9fc2-02a6d874e588	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:06	dd185a70-c057-4ee6-8dc3-c1d01af033cb	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:36	54c141ab-ff51-4579-bc35-40790ba39065	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:37	974d86f7-1475-4b38-9e17-2cccdb6061a9	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:37	df811904-4bcc-4ec0-970e-ecf3e33c07c6	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:37	67a6b157-2b17-4337-ba9e-c870681d3fe3	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:28:38	97d0a603-4c57-4fb8-ab02-e95a999d6a5e	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:07	f1bfbd4b-d322-49f0-811d-01c8f1cf01ca	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:08	b453766a-d9ad-43e8-b444-c31caab36617	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:08	9ececd5d-7540-454e-ad8c-6ba2ee5b39e1	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:08	e4df71ff-493a-47c2-8a69-8058c5747bca	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:09	8f0fb191-0eea-4b14-a87d-8366cc28f347	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:10	59b01e7e-1aec-41d7-b799-d31a1fcb9a04	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:10	d7d36b3e-11c0-41e1-aeec-14e6c3800c61	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	02:30:11	ced07ebd-7580-47b7-b433-acb71f616784	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	14:02:24	31604ae4-fe0d-43f8-ac13-c7b9b428e8d8	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	14:04:49	4ec89087-61e5-4f64-8ac4-2b1efd833818	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	14:04:51	3e1ba2d1-5cac-4923-a507-69e63321b7fd	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	14:32:03	d088dadd-6144-435d-b99b-fb2f43bf5ae9	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	14:51:23	fbbb3ab4-4cae-4f7c-9dc5-04d64701987a	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	15:07:22	6592e24c-2275-457c-be1e-0ec4d23a6787	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	15:07:26	d6cd04f1-9ba3-4c1b-8782-93f9372919ea	TypeError:Cannot read properties of undefined (reading 'id')
+20250204	15:14:17	68c6b5c6-47e5-4f67-9a50-209c54d81b1f	TypeError:object is not iterable (cannot read property Symbol(Symbol.iterator))
+20250204	20:32:34	2d8d7533-cdf9-4100-b42a-61c71c16fcba	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250204	20:32:51	dcb6a84b-8c15-4690-998f-29507b45bade	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250204	20:32:52	ceb6d48d-ab08-46bc-87c4-6f1d7500a633	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250204	20:32:52	f061693f-a57f-47e9-8011-5bd69e39eeff	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250204	20:32:52	c0eddb8a-c0e5-4b1e-9cd8-dbc2f6997a3e	Error:ENOENT: no such file or directory, stat 'C:\Users\Senaa\Desktop\All_new\AmazomBackEnd\routes\...\views\index.html'
+20250206	17:26:51	6c8be654-5702-4636-a104-c251a43231dc	TypeError:authHeader?.startswith is not a function
+20250206	17:29:06	3af99d72-db3a-4eb7-8643-8b786329c4e8	TypeError:authHeader?.startswith is not a function
+20250206	17:30:00	d97d9a73-a605-45e8-b01e-061264f1e43d	TypeError:authHeader?.startswith is not a function
+20250206	17:31:20	220149b0-35a3-4bf0-a050-8fda0f68c5ac	TypeError:authHeader?.contains is not a function
+20250206	17:33:21	56aba333-8acc-41d3-a8df-fe96360ac98e	Error:Cannot set headers after they are sent to the client
+20250209	03:14:07	681dbf65-1ce1-47e1-aee5-e746fcb872ae	TypeError:Cannot read properties of undefined (reading 'employeeId')
+20250209	03:24:18	d01e7c4c-f247-4784-b182-e5e7a1ab25a1	TypeError:Cannot read properties of undefined (reading 'employeeId')
+20250209	03:24:59	6bf90acf-1226-4b51-a8c6-d43ba4b1c4a5	TypeError:Cannot read properties of undefined (reading 'employeeId')
+20250209	03:41:05	f9cb5813-beff-40b4-bac0-d7e4118bc628	TypeError:Cannot read properties of undefined (reading 'employeeId')
+20250209	03:46:34	aca17a4d-8278-4c6c-a54e-f9fba9893ae2	TypeError:Cannot read properties of undefined (reading 'userInfo')
+20250209	03:47:41	95ece43e-dea7-46fb-89f7-b1d5ca354fec	ReferenceError:tokenSecret is not defined
+20250209	03:49:45	e9e0ed25-f19b-4f7e-bb18-f37f3d41e36a	ReferenceError:tokenSecret is not defined
+20250209	04:00:21	6476c7c4-526b-411e-8f24-d8650be110e7	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250209	04:36:43	bbce44fb-4e2b-4e4d-867e-3ae4d4877bf3	SyntaxError:Unexpected token 'e', ..."   "id": newId,
+   "... is not valid JSON
+20250210	14:43:11	bab7e90f-9ca6-4315-b897-d7090295ce06	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250210	14:43:20	d58a9054-f643-4b79-a05b-8decc9a0730f	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250210	15:16:04	2464d1cc-5804-4df7-bcd6-0d3cfb462970	SyntaxError:Expected ',' or '}' after property value in JSON at position 110 (line 6 column 5)
+20250210	15:16:19	acfba867-bf62-41d5-9085-b836cc0b9322	SyntaxError:Unexpected token '$', ..."  "price":$900
+}" is not valid JSON
+20250423	05:36:28	a0555bcb-607e-49aa-8e9b-3472d8ad52c7	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	05:37:02	9296cd62-b82d-44b9-a947-43ee812c294e	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	05:37:11	252aa083-57e8-4033-94d4-d4f5ff8e8968	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	06:37:36	c5cde117-51be-41eb-8ab7-e2ec501e1a00	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	06:52:59	4fd9e2e4-6877-4e0d-8b82-eb34120d6c52	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	06:53:19	83822975-68b2-4eea-9da6-b5e5cac0197d	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	06:53:33	a49f69d3-247f-4bcf-b47f-722e271fd9b6	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	06:54:02	5fceb134-0370-4735-9ac8-647c3a8ca7bc	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250423	13:03:37	6d5147f8-5a41-4e00-98cb-fb54863e0045	Error:not allowed by cors
+20250429	16:50:20	c17e3c48-3db9-404c-aaaf-8d5df4657b99	SyntaxError:Unexpected token 'o', ..."lastname":ojj,
+    "... is not valid JSON
+20250429	18:16:43	90e5a3a7-e0c3-4e5b-b7df-459244e67407	SyntaxError:Expected double-quoted property name in JSON at position 133 (line 5 column 13)
+20250501	13:19:25	45fc6447-89cc-43e4-9b2a-2540d0f42bf5	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250502	07:16:32	de5c96ab-0742-4c79-a9a3-9663e3307ee6	Error:not allowed by cors
+20250502	07:59:47	ae622edc-3876-4242-ade7-4ef4741fe873	TypeError:Cannot read properties of undefined (reading 'UserInfo')
+20250503	01:21:56	280de0bc-f98e-48bf-a5b2-57338311a550	ReferenceError:Cannot access 'token' before initialization
+20250507	12:45:11	06bde095-a38d-4497-ba6c-036f2d2424a5	ReferenceError:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9 is not defined
+20250507	12:49:26	4e7efacb-5c0e-45ad-965e-c74cf8b00ebf	TypeError:Cannot read properties of undefined (reading 'username')
+20250507	12:49:35	11bdb9a3-36c7-4df0-a055-51a543f11916	TypeError:Cannot read properties of undefined (reading 'username')
+20250507	14:14:19	87b8ee1c-9476-4627-9560-9082385426c7	TypeError:Cannot read properties of undefined (reading 'username')
+20250511	09:21:23	b7ae82b7-174b-416a-8b78-bc1b10c56ec6	TypeError:req.roles.map is not a function
+20250511	09:24:12	b4aae722-73a3-4081-a0f7-a77d88a38259	TypeError:req.roles.map is not a function
+20250513	15:17:24	e9429393-fb1c-4796-806c-178656b43ff3	PayloadTooLargeError:request entity too large
