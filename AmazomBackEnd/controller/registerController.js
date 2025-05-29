@@ -10,71 +10,55 @@ const User = require("../model/User");
 const Employee = require("../model/Employee");
 const bcrypt = require("bcrypt");
 
-const handleNewUser = async (req,res) => {
-    const {user,pwd,employeeId,firstname,lastname} = req.body;
-    if (!user||!pwd) return res.status(400).json({"message": "username ad password are required"}) 
+const handleNewUser = async (req, res) => {
+  const { user, pwd, employeeId, firstname, lastname } = req.body;
+
+  if (!user || !pwd) {
+    return res
+      .status(400)
+      .json({ message: "Username and password are required" });
+  }
+
+  try {
     const employeeduplicate = await Employee.findOne({ username: user }).exec();
     const userduplicate = await User.findOne({ username: user }).exec();
-    //if (employeeduplicate||userduplicate) return res.sendStatus(409);
-    
-    if(employeeId){
 
+    if (employeeId) {
       if (employeeduplicate) {
-        return res.sendStatus(409).json({ message: "employee already exists" });;
+        return res.status(409).json({ message: "Employee already exists" });
       }
 
-      try {
-        const hashedpwd = await bcrypt.hash(pwd, 10);
+      const hashedpwd = await bcrypt.hash(pwd, 10);
+      const roles = String(employeeId).startsWith("9")
+        ? { Admin: employeeId }
+        : { employeeId };
 
-        const roles = {};
-        if (String(employeeId).startsWith("9")) {
-          roles.Admin = employeeId;
-        } else {
-          roles.employeeId = employeeId;
-        }
+      const result = await Employee.create({
+        username: user,
+        password: hashedpwd,
+        firstname,
+        lastname,
+        roles,
+      });
 
-        //store ew user
-        const result = await Employee.create({
-          username: user,
-          password: hashedpwd,
-          firstname: firstname,
-          lastname: lastname,
-          roles: roles,
-        });
-        console.log("newUser", result);
-
-        res.status(201).json({ message: `New user ${user} created` });
-      } catch (err) {
-        res.status(500).json({ message: err.message });
+      console.log("New Employee Created:", result);
+      return res.status(201).json({ message: `New employee ${user} created` });
+    } else {
+      if (userduplicate) {
+        return res.status(409).json({ message: "User already exists" });
       }
 
-    }else{  
-       if (userduplicate) {return res.sendStatus(409).json({ message: "User already exists" });;}
-       try {
-         const hashedpwd = await bcrypt.hash(pwd, 10);
+      const hashedpwd = await bcrypt.hash(pwd, 10);
+      const result = await User.create({ username: user, password: hashedpwd });
 
-         //store ew user
-         const result = await User.create({
-           "username": user,
-           "password": hashedpwd,
-           /*"firstname": firstname,
-           "lastname": lastname,*/
-         });
-         console.log("newUser", result);
-
-         res.status(201).json({ message: `New user ${user} created` });
-       } catch (err) {
-         res.status(500).json({ message: err.message });
-       } 
-
+      console.log("New User Created:", result);
+      return res.status(201).json({ message: `New user ${user} created` });
     }
-
-       
-       
-       
-       
-}  
-
+  } catch (err) {
+    console.error("Server Error:", err);
+    return res.status(500).json({ message: "Internal server error" });
+  }
+};
 
 module.exports = { handleNewUser };
 
