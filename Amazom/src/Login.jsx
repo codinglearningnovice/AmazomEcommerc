@@ -15,30 +15,38 @@ function Login() {
   const user = email;
   const pwd = password;
 
-  const signin = e => {
+  const signin = async(e) => {
     e.preventDefault();
-    //signInWithEmailAndPassword(auth, email,password)
-    signInWithEmailAndPassword(user, pwd)
-      .then((response) => {
-        console.log(response);
-        if (response.status === 201) {
-          navigate("/");
-        }
-        console.log(auth);
-      })
-      .catch((error) => alert(error.message));
+    try {
+      const { status, data } = await createUserWithEmailAndPassword(user, pwd);
+      console.log("Response:", status, data);
 
+      if (status === 201) {
+        navigate("/");
+      } else {
+        alert(
+          data.message || "Failed to register. Please check your credentials."
+        );
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert(error.message || "An error occurred.");
+    }
   }
   
   const register = async (e) => {
     e.preventDefault();
+    
     try {
-      const response = await createUserWithEmailAndPassword(user, pwd);
-      console.log(response);
-      if (response?.status === 201) {
+      const { status, data } = await createUserWithEmailAndPassword(user, pwd);
+      console.log("Response:", status, data);
+
+      if (status === 201) {
         navigate("/");
       } else {
-        alert("Failed to register. Please check your credentials.");
+        alert(
+          data.message || "Failed to register. Please check your credentials."
+        );
       }
     } catch (error) {
       console.error("Error:", error);
