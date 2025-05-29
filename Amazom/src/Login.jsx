@@ -20,6 +20,7 @@ function Login() {
     //signInWithEmailAndPassword(auth, email,password)
     signInWithEmailAndPassword(user, pwd)
       .then((response) => {
+        console.log(response);
         if (response.status === 201) {
           navigate("/");
         }
@@ -29,18 +30,22 @@ function Login() {
 
   }
   
-  const register = e =>{
+  const register = async (e) => {
     e.preventDefault();
-    //createUserWithEmailAndPassword(auth, email, password)
-    createUserWithEmailAndPassword(user,pwd)
-      .then((response) => {
-        if(response.status === 201){
-            navigate("/")
-        }
-       
-      })
-      .catch((error) => alert(error.message));
-  }
+    try {
+      const response = await createUserWithEmailAndPassword(user, pwd);
+      console.log(response);
+      if (response?.status === 201) {
+        navigate("/");
+      } else {
+        alert("Failed to register. Please check your credentials.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert(error.message || "An error occurred.");
+    }
+  };
+  
 
   return (
     <div className="logi">

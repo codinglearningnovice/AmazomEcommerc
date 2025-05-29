@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-async function createUserWithEmailAndPassword(user, pwd) {
+ export const createUserWithEmailAndPassword = async(user, pwd) => {
   const response = await fetch("https://amazomecommerc.onrender.com/register", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -13,7 +13,7 @@ async function createUserWithEmailAndPassword(user, pwd) {
 }
   
 
-async function signInWithEmailAndPassword(user, pwd) {
+export const signInWithEmailAndPassword = async(user, pwd) => {
   const response = await fetch("https://amazomecommerc.onrender.com/login", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -26,4 +26,3 @@ async function signInWithEmailAndPassword(user, pwd) {
 
 
 
-export default {signInWithEmailAndPassword,createUserWithEmailAndPassword}
