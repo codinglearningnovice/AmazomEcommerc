@@ -15,37 +15,41 @@ const handleNewUser = async (req,res) => {
     if (!user||!pwd) return res.status(400).json({"message": "username ad password are required"}) 
     const employeeduplicate = await Employee.findOne({ username: user }).exec();
     const userduplicate = await User.findOne({ username: user }).exec();
-    if (employeeduplicate||userduplicate) return res.sendStatus(409);
+    //if (employeeduplicate||userduplicate) return res.sendStatus(409);
     
-    if (employeeId){
-        
+    if(employeeId){
 
-        try {
-          const hashedpwd = await bcrypt.hash(pwd, 10);
+      if (employeeduplicate) {
+        return res.sendStatus(409);
+      }
 
-          const roles = {};
-          if (String(employeeId).startsWith("9")) {
-            roles.Admin = employeeId;
-          } else {
-            roles.employeeId = employeeId;
-          }
+      try {
+        const hashedpwd = await bcrypt.hash(pwd, 10);
 
-          //store ew user
-          const result = await Employee.create({
-            "username": user,
-            "password": hashedpwd,
-            "firstname":firstname,
-            "lastname":lastname,
-            "roles": roles,
-          })
-          console.log("newUser", result);
-
-          res.status(201).json({ message: `New user ${user} created` });
-        } catch (err) {
-          res.status(500).json({ message: err.message });
+        const roles = {};
+        if (String(employeeId).startsWith("9")) {
+          roles.Admin = employeeId;
+        } else {
+          roles.employeeId = employeeId;
         }
 
+        //store ew user
+        const result = await Employee.create({
+          username: user,
+          password: hashedpwd,
+          firstname: firstname,
+          lastname: lastname,
+          roles: roles,
+        });
+        console.log("newUser", result);
+
+        res.status(201).json({ message: `New user ${user} created` });
+      } catch (err) {
+        res.status(500).json({ message: err.message });
+      }
+
     }else{  
+       if (userduplicate) {return res.sendStatus(409);}
        try {
          const hashedpwd = await bcrypt.hash(pwd, 10);
 
