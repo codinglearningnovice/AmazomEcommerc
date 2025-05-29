@@ -43,7 +43,7 @@ const handleNewUser = async (req,res) => {
         });
         console.log("newUser", result);
 
-        res.status(201).json({ message: `New user ${user} created` });
+        res.status(201).json({ message: `New user ${user} created` },res.status);
       } catch (err) {
         res.status(500).json({ message: err.message });
       }
@@ -62,7 +62,7 @@ const handleNewUser = async (req,res) => {
          });
          console.log("newUser", result);
 
-         res.status(201).json({ message: `New user ${user} created` });
+         res.status(201).json({ message: `New user ${user} created` },res.status);
        } catch (err) {
          res.status(500).json({ message: err.message });
        } 
