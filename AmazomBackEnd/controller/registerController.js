@@ -20,7 +20,7 @@ const handleNewUser = async (req,res) => {
     if(employeeId){
 
       if (employeeduplicate) {
-        return res.sendStatus(409);
+        return res.sendStatus(409).json({ message: "employee already exists" });;
       }
 
       try {
@@ -43,13 +43,13 @@ const handleNewUser = async (req,res) => {
         });
         console.log("newUser", result);
 
-        res.status(201).json({ message: `New user ${user} created` },res.status);
+        res.status(201).json({ message: `New user ${user} created` });
       } catch (err) {
         res.status(500).json({ message: err.message });
       }
 
     }else{  
-       if (userduplicate) {return res.sendStatus(409);}
+       if (userduplicate) {return res.sendStatus(409).json({ message: "User already exists" });;}
        try {
          const hashedpwd = await bcrypt.hash(pwd, 10);
 
@@ -62,7 +62,7 @@ const handleNewUser = async (req,res) => {
          });
          console.log("newUser", result);
 
-         res.status(201).json({ message: `New user ${user} created` },res.status);
+         res.status(201).json({ message: `New user ${user} created` });
        } catch (err) {
          res.status(500).json({ message: err.message });
        } 
