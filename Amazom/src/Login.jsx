@@ -18,14 +18,14 @@ function Login() {
   const signin = async(e) => {
     e.preventDefault();
     try {
-      const { status, data } = await createUserWithEmailAndPassword(user, pwd);
+      const { status, data } = await signInWithEmailAndPassword(user, pwd);
       console.log("Response:", status, data);
 
       if (status === 201) {
         navigate("/");
       } else {
         alert(
-          data.message || "Failed to register. Please check your credentials."
+          data.message || "check your credentials again"
         );
       }
     } catch (error) {
