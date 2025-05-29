@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import "./login.css"
 import { Link, useNavigate } from 'react-router-dom';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
-import { auth } from './firebase';
+//import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {createUserWithEmailAndPassword,signInWithEmailAndPassword} from "./Authentication"
+//import { auth } from './firebase';
 
 
 
@@ -11,23 +12,32 @@ function Login() {
   const [email, setEmail] = useState('');  
   const [password, setPassword] = useState('');  
 
+  const user = email;
+  const pwd = password;
 
   const signin = e => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email,password)
-    .then(auth=>{navigate("/")})
-    .catch(error=> alert(error.message))
+    //signInWithEmailAndPassword(auth, email,password)
+    signInWithEmailAndPassword(user, pwd)
+      .then((response) => {
+        if (response.status === 201) {
+          navigate("/");
+        }
+        console.log(auth);
+      })
+      .catch((error) => alert(error.message));
 
   }
   
   const register = e =>{
     e.preventDefault();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((auth) => {
-        if(auth){
+    //createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(user,pwd)
+      .then((response) => {
+        if(response.status === 201){
             navigate("/")
         }
-        console.log(auth);
+       
       })
       .catch((error) => alert(error.message));
   }

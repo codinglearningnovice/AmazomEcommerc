@@ -53,8 +53,8 @@ const handleNewUser = async (req,res) => {
          const result = await User.create({
            "username": user,
            "password": hashedpwd,
-           "firstname": firstname,
-           "lastname": lastname,
+           /*"firstname": firstname,
+           "lastname": lastname,*/
          });
          console.log("newUser", result);
 
